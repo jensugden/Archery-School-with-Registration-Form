@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+  margin: 5px;
+  font-family: "Arial", Helvetica, sans-serif;
+}
+
+header {
+  height: 12rem;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #03a3df;
+}
+
+hr {
+    display: block;
+    height: 1rem;
+    border: 0;
+    background-color: #03a3df;
+    margin-bottom: 13px;
+}
+
+h1 {
+  color: white;
+}
+
+h2 {
+  text-align: left;
+  padding-top: 8px;
+}
+
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  width: auto;
+}
+
+nav a {
+  color: #03a3df;
+  text-decoration: none;
+}
+
+nav ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  list-style: none;
+}
+
+aside {
+  float: right;
+  flex-wrap: wrap;
+}
+
+footer {
+  display: flex;
+  clear: both;
+}
+
+.space-above {
+  margin-top: 13px;
+}
+.padding {
+  padding-left: 1rem;
+}
+.float-left {
+  float: left;
+}
+
+.instructors {
+  display: flex;
+  align-content: center;
+}
+
+.absolute {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.relative {
+  position: relative;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+.policy {
+  background-color: #f2f2f2;
+  padding: 1rem;
+  font-style: italic;
+  clear: both;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  text-align: center;
+}
+
+.wrapper-1 {
+  clear: both;
+  display: grid;
+  grid-template-columns: repeat(3, 32.266%);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.wrapper-2 {
+  clear: both;
+  display: grid;
+  grid-template-columns: repeat(3, 32.266%);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.wrapper-3 {
+  float: left;
+  width: 65%;
+  clear: both;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.two {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.three {
+  grid-column: 2/4;
+  grid-row: 1/2;
+}
+
+.four {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.five {
+  grid-column: 2/4;
+  grid-row: 2/3;
+}
+
+.six {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+.seven {
+  grid-column: 2/4;
+  grid-row: 3/4;
+}
+
+.eight {
+  grid-column: 1/4;
+  grid-row: 4/5;
+}
+
+.nine {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.ten {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.eleven {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
