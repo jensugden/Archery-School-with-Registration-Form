@@ -4,6 +4,36 @@
   font-family: "Arial", Helvetica, sans-serif;
 }
 
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  width: 100%;
+  border-radius: 10px;
+  background-color: rgb(68, 68, 68, 0.15);
+  border-color: rgb(68, 68, 68);
+  outline: none;
+}
+
+label {
+  margin-top: 1rem;
+}
+
+input:focus {
+background-color: #ecb722;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance:textfield;
+}
+
 header {
   height: 12rem;
   padding: 3rem;
@@ -62,6 +92,25 @@ footer {
   clear: both;
 }
 
+form {
+  display: flex;
+  background: rgb(27, 68, 127, 0.25);
+  padding: 1rem;
+}
+
+input[type=submit]{
+  background-color: #ecb722;
+}
+
+
+#billAddress {
+  display: none;
+}
+
+input[id="same"]:checked + label + #billAddress {
+  display: block;
+}
+
 .space-above {
   margin-top: 13px;
 }
@@ -104,6 +153,28 @@ a:visited {
   justify-content: space-around;
   align-items: flex-start;
   text-align: center;
+}
+
+.col-left {
+  float: left;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 45%;
+  margin-left: 1rem;
+}
+
+.col-right {
+  float: right;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 45%;
+  margin-left: 3rem;
 }
 
 .wrapper-1 {
