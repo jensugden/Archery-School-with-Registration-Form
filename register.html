@@ -11,9 +11,10 @@
       <img src="images/archeryAcademy-logo-white.png" alt="archery academy logo">
       <h1>Straight to the Point Archery School</h1>
     </header>
-
+    <a href="#main">Skip to main content</a>
     <nav>
       <ul>
+        <li><a href="index.html">Home</a></li>
         <li><a href="register.html">Register</a></li>
         <li><a href="instructors.html">Instructors</a></li>
         <li><a href="about.html">About</a></li>
@@ -22,10 +23,10 @@
 
     <hr/>
 
-    <h2>Registration Form</h2>
+    <h2 id="main">Registration Form</h2>
       <form method="POST">
         <div class="col-left">
-          <h3>Student Information</h3>
+          <h3>Contact Information</h3>
           <label>Name:
             <input type="text" name="studentName">
           </label>
@@ -51,30 +52,32 @@
           </label>
 
           <label>Tell us any questions you have and we will contact you:</label>
-            <textarea name="questionField" rows="12" cols="50"></textarea>
+            <textarea name="questionField" rows="12" cols="50" placeholder="enter any questions you have for Straight to the Point Archery"></textarea>
 
         </div>
         <div class="col-right">
-          <h3>Billing Information</h3>
-          <label for="same">Billing address same as contact
-            <input type="checkbox" name="sameBilling" checked="checked" id="same">
-          </label>
 
-          <label>Address:
-            <input type="text" name="billingAddress">
-          </label>
+          <fieldset>
+            <legend>Billing Information</legend>
+            <label for="same">Billing address same as contact address
+              <input type="checkbox" name="sameBilling" checked id="same">
+            </label>
+            <label for="billAddress">Address:
+              <input type="text" name="billingAddress" id="billAddress">
+            </label>
 
-          <label>City:
-            <input type="text" name="billingCity">
-          </label>
+            <label for="billCity">City:
+              <input type="text" name="billingCity" id="billCity">
+            </label>
 
-          <label>State:
-            <input type="text" name="billingState">
-          </label>
+            <label for="billState">State:
+              <input type="text" name="billingState" id="billState">
+            </label>
 
-          <label>Zip Code:
-            <input type="number" name="billingZip">
-          </label>
+            <label for="billZip">Zip Code:
+              <input type="number" name="billingZip" id="billZip">
+            </label>
+          </fieldset>
 
           <label>Choose a class:
             <select name="classes" required>
